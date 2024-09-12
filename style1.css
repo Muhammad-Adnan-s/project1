@@ -1,0 +1,172 @@
+body {
+    font-family: sans-serif;
+}
+
+.row a {
+    text-decoration: none;
+    font-size: .9rem;
+}
+header p{
+    text-align: center;
+}
+.text-center {
+    position: relative;
+    top: 30px;
+}
+
+#dots {
+    border: 2px dotted white;
+}
+
+.bg {
+    background: url('image/full-bg-img.jpg') no-repeat center center/cover;
+    height: 400px;
+}
+
+#image {
+    box-shadow: 0px 0px 7px 0px #ccc;
+    border-radius: 10px;
+    width: 240px;
+    height: 150px;
+}
+#img {
+    position: relative;
+    top: 10px;
+    width: 80px;
+}
+
+#image h5 {
+    position: relative;
+    top: 20px;
+}
+
+#image:hover {
+    transform: translateY(5px);
+}
+
+main section{
+    background: url('image/opp-banner.jpg') no-repeat center center/cover;
+    height: 500px;
+    width: 100%;
+}
+section.card {
+    width: 200px;
+}
+
+.card:hover {
+    opacity: .9;
+}
+
+.card img {
+    width: 180px;
+}
+
+/* hamburger  */
+.ham {
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.ham .row {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+.item1 {
+    width: 30px;
+    height: 4px;
+    background-color: rgb(32, 192, 17);
+}
+
+.item2 {
+    width: 30px;
+    height: 4px;
+    background-color: rgb(32, 192, 17);
+}
+
+.item3 {
+    width: 30px;
+    height: 4px;
+    background-color: rgb(32, 192, 17);
+}
+
+.change {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    gap: .2rem;
+    align-items: center;
+    width: 300px;
+    height: 70vh;
+    margin-top: -50px;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 30%;
+    transition: all 1s;
+}
+
+.lin1 {
+    transform: rotateZ(60deg);
+    background-color: rgb(233, 22, 22);
+    transition: transform .5s;
+    position: relative;
+    top: 10px;
+}
+
+.lin2 {
+    display: none;
+}
+
+.lin3 {
+    background-color: rgb(255, 0, 0);
+    transform: rotateZ(-60deg);
+    transition: transform .5s;
+    position: relative;
+    top: 2px;
+}
+
+.has-scrollbar{
+    display:flex;
+    flex-flow: row;
+    gap: 5px;
+    overflow-x: scroll;
+    scroll-snap-type: inline mandatory;
+    padding-block-end: 20px;
+    margin-block-end: -20px;
+    margin-inline: -15px;
+    padding-inline: 15px
+}
+.has-scrollbar::-webkit-scrollbar { height: 10px; }
+.has-scrollbar::-webkit-scrollbar-track { background: transparent; }
+.has-scrollbar::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 10px;
+}
+.has-scrollbar::-webkit-scrollbar-button { width: 10px; }
+.has-scrollbar:is(:hover, :focus-within
+)::-webkit-scrollbar-thumb { background-color: green; }
+.has-scrollbar .ms-lg-4{
+    flex: 0 0 300px;
+}
+.community .row{
+    background-color: #f5f8fb;
+}
+.featured{
+    background-color: #f5f8fb;
+
+}
+.row .img img{
+    width: 150px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+}
+footer{
+    height: 50px;
+}
+footer p{
+    position: relative;
+    top: 20px;
+}
